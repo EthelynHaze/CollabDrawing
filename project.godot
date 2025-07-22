@@ -13,8 +13,3 @@ config_version=5
 config/name="CollabDraw"
 run/main_scene="uid://cyc261ryci8h6"
 config/features=PackedStringArray("4.4", "Forward Plus")
-
-[display]
-
-window/stretch/mode="viewport"
-window/stretch/aspect="expand"
