@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg7i74ix22m2m"]
+
+[ext_resource type="Theme" uid="uid://b7cewilhr4vg7" path="res://resources/themes/default.theme" id="1_hhxe2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m65ht"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.0509804, 0.0705882, 0.0941176, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.85098, 0.364706, 0.266667, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="PopupMenu" type="PopupMenu"]
+size = Vector2i(200, 300)
+visible = true
+unfocusable = true
+theme = ExtResource("1_hhxe2")
+theme_override_styles/panel = SubResource("StyleBoxFlat_m65ht")
+item_count = 3
+item_0/text = "Menu Bar"
+item_0/id = 0
+item_1/text = "Color Picker"
+item_1/id = 1
+item_2/text = "Layer"
+item_2/id = 2

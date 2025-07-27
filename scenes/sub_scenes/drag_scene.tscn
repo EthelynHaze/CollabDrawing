@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2u4o4gr8n4x1"]
+
+[ext_resource type="Theme" uid="uid://b7cewilhr4vg7" path="res://resources/themes/default.theme" id="1_xe40d"]
+[ext_resource type="Script" uid="uid://c2yefht8p6yi" path="res://scenes/scene_scripts/drag_scene.gd" id="2_ab1po"]
+
+[node name="DragScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -610.0
+offset_bottom = -278.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_xe40d")
+script = ExtResource("2_ab1po")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Titlebar" type="Control" parent="Panel/MarginContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/Titlebar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(180, 0)
+size_flags_horizontal = 3
+text = "File"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Panel/MarginContainer/Titlebar"]
+custom_minimum_size = Vector2(30, 20)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -10.0
+offset_bottom = 10.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 8
+theme_override_colors/font_hover_color = Color(0.85098, 0.364706, 0.266667, 1)
+text = "x"
